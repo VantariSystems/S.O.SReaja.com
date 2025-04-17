@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.O.S Reaja</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>S.O.S Reaja</h1>
+    <p class="slogan">Você pode salvar uma vida. Inclusive a sua.</p>
+  </header>
+
+  <!-- Seção: Emergências (a expandir depois) -->
+  <section class="emergencias">
+    <h2>Emergências</h2>
+  
+    <div class="emergencia-container">
+      
+      <!-- Coluna Esquerda: Ligar + Modo Silencioso empilhados -->
+      <div class="coluna-esquerda">
+        <a href="tel:192" class="botao-acao botao-sos botao-pequeno">📞<br>Ligar 192</a>
+        <button class="botao-acao botao-silencioso botao-pequeno" onclick="ativarModoSilencioso()">🌙<br>Modo Silencioso</button>
+      
+
+    </div>
+  
+      <!-- Coluna Direita: Botões principais -->
+      <div class="botoes-linha">
+        <button class="botao-acao botao-grande" onclick="abrirModal('modalCardiaca')">🫀<br>Parada<br>Cardíaca</button>
+        <button class="botao-acao botao-grande" onclick="abrirModal('modalEngasgo')">😮‍💨<br>Engasgo</button>
+
+        <button class="botao-acao botao-grande" onclick="abrirModal('modalDesmaio')">🌀<br>Desmaio</button>
+        <button class="botao-acao botao-grande" onclick="abrirModal('modalConvulsao')">⚡<br>Convulsão</button>
+        <button class="botao-acao botao-grande" onclick="abrirModal('modalQueimadura')">🔥<br>Queimadura</button>
+      </div>
+    </div>
+
+    
+  
+    <!-- Modal Parada Cardíaca -->
+<div id="modalCardiaca" class="modal">
+    <div class="modal-conteudo">
+      <button onclick="fecharModal('modalCardiaca')" class="fechar">Fechar</button>
+      <h2>🫀 Parada Cardíaca</h2>
+      <ul>
+        <li>Verifique se a pessoa está inconsciente e sem respirar.</li>
+        <li>Peça ajuda imediatamente e ligue para <strong>192 (SAMU)</strong> ou oriente alguém a ligar.</li>
+        <li><strong>Inicie a Ressuscitação Cardiopulmonar (RCP):</strong></li>
+        <ul>
+            <li>Pressione com força e ritmo o centro do tórax (entre os mamilos).</li>
+            <li>Frequência: <strong>100 a 120 compressões por minuto</strong>.</li>
+            <li>Profundidade: aproximadamente <strong>5 cm</strong>.</li>
+            <li>Deixe o tórax voltar entre cada compressão.</li>
+          </ul>
+        </li>
+        <li>Se alguém estiver por perto, reveze a cada <strong>2 minutos</strong> para evitar cansaço.</li>
+        <li>Continue sem parar até a chegada do socorro ou até a pessoa reagir.</li>
+      </ul>
+    </div>
+    </div>
+
+
+<!-- Modal Engasgo -->
+<!-- Modal Engasgo -->
+<div id="modalEngasgo" class="modal">
+  <div class="modal-conteudo">
+    <button onclick="fecharModal('modalEngasgo')" class="fechar">Fechar</button>
+    <h2>😮‍💨 Engasgo</h2>
+    <div class="steps">
+      <ul>
+        <li>Se a pessoa não respirar, peça ajuda imediatamente!</li>
+        <li>Se ela estiver tossindo, fale para continuar.</li>
+        <li>Se ela não tossir, faça o seguinte:</li>
+        <ul>
+          <li>Fique atrás dela.</li>
+          <li>Incline-a para frente.</li>
+          <li>Dê <strong>5 ou 6 tapinhas</strong> nas costas.</li>
+        </ul>
+        <li>Se não sair, faça a <strong>Manobra de Heimlich</strong>:</li>
+        <ul>
+          <li>Coloque o punho acima da barriga.</li>
+          <li>Empurre para cima com força.</li>
+        </ul>
+        <li>Se não melhorar, ligue para <strong>192 (SAMU)</strong> agora!</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div id="modalDesmaio" class="modal">
+    <div class="modal-conteudo">
+        <button onclick="fecharModal('modalDesmaio')" class="fechar">Fechar</button>
+        <h2>😵 Desmaio</h2>
+        <ul>
+          <li><strong>Verifique se a pessoa está respirando.</strong></li>
+          <li><strong>Se estiver inconsiente, mas respirando:</strong></li>
+          <li><strong>Coloque a pessoa deitada de lado.</strong> Isso ajuda a evitar que a pessoa se engasque caso vomite.</li>
+          <li><strong>Eleve as pernas</strong> Para melhorar a circulação sanguínea.</li>
+          <li><strong>Não force a pessoa a levantar até que ela esteja totalmente recuperada.</li>
+                <li><strong>Se a pessoa não acordar em minutos ou se houver histórico de doenças graves, como problemas cardíacos ou respiratórios, ligue para 192 (SAMU).</strong></li>
+              </ul>
+        <div class="note">
+          <span class="icon">⚠️</span> Nunca tente acordar a pessoa forçando-a a levantar ou oferecendo comida. Aguarde o socorro especializado!
+        </div>
+        </div>
+</div>
+
+
+<div id="modalConvulsao" class="modal">
+  <div class="modal-conteudo">
+      <button onclick="fecharModal('modalConvulsao')" class="fechar">Fechar</button>
+      <h2>⚡ Convulsão</h2>
+      <ul>
+        <li><strong>Verifique a duração da convulsão:</strong> Se durar <strong>mais de 5 minutos</strong>, ligue para <strong>192 (SAMU)</strong>.</li>
+<li><strong>Proteja a pessoa de objetos duros</strong> e coloque algo macio sob a cabeça, como uma toalha ou roupa dobrada.</li>
+<li><strong>Vire a pessoa de lado</strong> para evitar que ela engula saliva ou vômito e prevenir obstrução das vias aéreas.</li>
+<li><strong>Não tente segurar a pessoa</strong> nem coloque nada na boca. Isso pode causar lesões.</li>
+<li><strong>Após a convulsão, verifique a respiração.</strong> Se necessário, inicie a <strong>RCP</strong> (massagem cardíaca).</li>
+<li><strong>Se não se recuperar rapidamente</strong> ou tiver dificuldade para respirar, ligue para <strong>192 (SAMU)</strong>.</li>
+      </ul>
+        <div class="note">
+          <span class="icon">⚠️</span> Nunca tente segurar a pessoa ou colocar algo em sua boca durante a convulsão. A proteção da cabeça é crucial para evitar lesões graves.
+        </div>
+  </div>
+</div>
+
+
+<div id="modalQueimadura" class="modal">
+  <div class="modal-conteudo">
+      <button onclick="fecharModal('modalQueimadura')" class="fechar">Fechar</button>
+      <h2>🔥 Queimadura</h2>
+      <ul>
+        <li>Coloque a área queimada sob água fria por pelo menos 10 minutos.</li>
+        <li>Não aplique gelo diretamente sobre a queimadura.</li>
+        <li><strong>Se a pessoa apresentar sinais de choque:</strong>
+          <ul>
+            <li>Pele fria e suada.</li>
+            <li>Palidez ou cor azulada na pele.</li>
+            <li>Dificuldade para respirar.</li>
+            <li>Pulso rápido ou fraco.</li>
+            <li>Confusão ou perda de consciência.</li>
+          </ul>
+        </li>
+        <li><strong>Se houver sinais de choque, ligue imediatamente para 192 (SAMU).</strong></li>
+      </ul>
+      <div class="note">
+        <span class="icon">⚠️</span> Reconhecer os sinais de choque é fundamental para a sobrevivência. Não hesite em pedir ajuda imediatamente!
+      </div>
+    </div>
+</div>
+
+  
+
+    <!-- Overlay do modo silencioso -->
+    <div id="modoSilencioso" class="overlay-silencioso">
+      <p id="fraseSilenciosa">Respire e chame ajuda. Você está seguro.</p>
+      <button onclick="desativarModoSilencioso()">Sair</button>
+    </div>
+    <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">
+      "Fique atento! Mais orientações importantes para situações de emergência em breve."
+    </p>
+  </section>
+  
+    <!-- Coluna Esquerda: Botões especiais -->
+    
+        
+          
+  </section>
+
+  <!-- Seção: Mindset Positivo (com voz e troca automática) -->
+  <section class="mindset">
+    <h2>🧠 Mentalize e Reaja</h2>
+    <div class="mensagem-container">
+        <p id="frase" class="mensagem">Você está fazendo o melhor que pode. Respire fundo.</p>
+        <p style="font-style: italic; font-size: 0.9rem; color: #666;">
+      As mensagens mudam automaticamente.
+    </p>
+    </div>
+  </section>
+
+  <!-- Seção: Respiração Guiada -->
+  <section class="respiracao">
+    <h2>Respiração Guiada</h2>
+    <div id="circulo"></div>
+    <p id="instrucao">Clique em Iniciar</p>
+    <button class="botao-respire" onclick="iniciarRespiracao()">💨 Iniciar</button>
+  </section>
+  
+  
+  <section class="encerramento">
+     <button onclick="scrollToTop()" class="botao-cta-topo">🔝</button>
+    <p>❤️ Estamos com você. Sempre que precisar, respire, escute, reaja.</p>
+   
+  </section>
+  
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 S.O.S Reaja – Criado com expertise para salvar vidas, por Rafaella SA – Web Developer & Systems Analyst in Progress.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

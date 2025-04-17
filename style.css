@@ -1,0 +1,427 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7f7;
+  color: #1d3557;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #e63946;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+.slogan {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.emergencias h2,
+.mindset h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Bloco do topo com 📞 e 🌙 */
+.bloco-topo {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Linha com os botões grandes */
+.botoes-linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+/* Botões padrão - agora grandes */
+.botao-acao {
+  background-color: #457b9d;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 14px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  line-height: 1.4;
+}
+
+.botao-acao:hover {
+  background-color: #1d3557;
+  transform: scale(1.03);
+}
+
+/* Botões pequenos (📞 e 🌙) */
+.botao-pequeno {
+  width: 140px;
+  height: 80px;
+  font-size: 1rem;
+  padding: 15px;
+}
+
+.botao-silencioso {
+  background-color: #6a4c93;
+}
+
+.botao-silencioso:hover {
+  background-color: #4e3b6d;
+}
+
+.botao-sos {
+  background-color: #e63946;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao-sos:hover {
+  background-color: #a3001b;
+}
+
+/* Mindset */
+.mensagem {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #222;
+}
+
+/* Rodapé */
+footer {
+  background-color: #1d3557;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Respiração Guiada */
+.respiracao {
+  background-color: #f1faee;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#circulo {
+  margin: 30px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #457b9d;
+  transition: all 4s ease-in-out;
+}
+
+#instrucao {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Modo Silencioso */
+.overlay-silencioso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  z-index: 9999;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay-silencioso button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #333;
+  border: none;
+  color: white;
+  border-radius: 6px;
+}
+
+.botao-respire {
+  background-color: #2a9d8f;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-respire:hover {
+  background-color: #21867a;
+  transform: scale(1.03);
+}
+
+/* Emergências */
+.emergencia-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 30px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;}
+
+.coluna-esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding-top: 5px;
+}
+
+.botoes-centrais,
+.botoes-linha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.botao-grande {
+  width: 180px;
+  max-width: 180%;
+  height: 220px;
+  padding: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-grande:hover {
+  background-color: #1d3557;
+  transform: scale(1.03);
+}
+
+.encerramento {
+  background-color: #f1faee;
+  color: #1d3557;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-top: 40px;
+  border-top: 2px solid #a8dadc;
+}
+
+.botao-cta-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e63946;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease, transform 0.3s ease;
+}
+
+.botao-cta-topo:hover {
+  background-color: #c91c2a;
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Conteúdo do Modal */
+.modal-conteudo {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Botão de Fechar */
+.fechar {
+  position: absolute;
+  top: auto;
+  bottom: 10px;
+  right: 12px;
+  background-color: #e63946;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 16px;
+  transition: backgroun-color 0.3s ease, transform 0.3s ease box-shadow 0.3s ease;
+}
+
+.fechar:hover {
+  color: #c03922; /* Cor ao passar o mouse */
+  transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.5); /* Sombra ao passar o mouse */
+}
+
+.fechar:focus {
+  outline: none; /* Remove o contorno padrão ao focar */
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.8); /* Sombra ao focar */
+}
+
+/* Estilos para as instruções */
+.steps {
+  margin: 20px;
+}
+
+.steps ol {
+  padding-left: 20px;
+}
+
+.steps li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.note {
+  font-size: 14px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.note .icon {
+  margin-right: 5px;
+  color: gold;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  /* Para tablets */
+  .botao-acao, .botao-grande {
+      width: 45vw; /* Usando 'vw' para largura relativa à viewport */
+      height: auto; /* A altura se ajusta automaticamente */
+  }
+
+  .botao-acao {
+      font-size: 1rem;
+  }
+
+  .botao-grande {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Para dispositivos móveis menores */
+  .botao-acao, .botao-grande {
+      width: 60vw; /* Ajuste em função da largura da tela */
+      height: auto; /* Altura ajusta automaticamente */
+  }
+
+  .botao-acao {
+      font-size: 1rem;
+  }
+
+  .botao-grande {
+      font-size: 1rem;
+  }
+
+  .botoes-linha {
+      flex-direction: column; /* Colocando os botões em coluna */
+      align-items: center; /* Centraliza os itens */
+  }
+}
+
+@media (max-width: 600px) {
+  /* Para smartphones pequenos */
+  .botao-acao, .botao-grande {
+      width: 90%; /* Usando 90% da largura da tela */
+      height: auto; /* Ajuste automático da altura */
+  }
+
+  .botoes-linha {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .modal-conteudo {
+      width: 90%; /* Modal ocupa 90% da largura da tela */
+      max-width: 350px;;
+  }
+}
+
+@media (max-width: 600px) {
+  .botao-cta-topo {
+    bottom: 10px; /* Distância menor do fundo */
+    right: 10px; /* Distância menor da lateral */
+  }
+}
+
