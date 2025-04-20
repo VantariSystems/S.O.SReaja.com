@@ -369,7 +369,8 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 10px; /* Espaçamento entre os botões */
-    flex-wrap: wrap; /* Impede que os botões quebrem para a linha seguinte */
+    flex-wrap: nowwrap; /* Impede que os botões quebrem para a linha seguinte */
+    margin: 0 auto; /* Centraliza o container em relação à tela */
 }
 
 /* Responsivo */
