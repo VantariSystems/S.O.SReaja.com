@@ -390,7 +390,7 @@ footer {
 /* Responsivo para dispositivos móveis maiores (até 768px) */
 @media (max-width: 768px) {
   .botao-acao, .botao-grande {
-      width: 40vw; /* A largura foi diminuída um pouco para caber melhor na linha */
+      width: 30vw; /* A largura foi diminuída um pouco para caber melhor na linha */
       height: auto;
       font-size: 1rem;
   }
@@ -408,12 +408,17 @@ footer {
   .botao-acao, .botao-grande {
       width: 50vw; /* Ajusta para 80% da largura da tela em smartphones */
       height: auto;
+    padding: 5px 10px; /* Padding menor */
+    border: 1px solid #aaa; /* Borda fina */
+    
   }
 
   .botao-pequeno {
     width: 40vw; /* Ajusta para 40% da largura da tela em smartphones */
     height: auto;
     font-size: 0.8rem; /* Ajusta o tamanho da fonte */
+     padding: 5px 8px; /* Padding menor para botões pequenos */
+    border: 1px solid #aaa; /* Borda mais fina */
   }
 
   
