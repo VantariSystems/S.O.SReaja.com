@@ -368,24 +368,25 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 10px; /* Espaçamento entre os botões */
-    flex-wrap: nowwrap; /* Impede que os botões quebrem para a linha seguinte */
+    flex-wrap: wrap; 
     margin: 0 auto; /* Centraliza o container em relação à tela */
 }
 
-/* Responsivo */
 /* Responsivo para tablets (até 1024px) */
 @media (max-width: 1024px) {
   .botao-acao, .botao-grande {
       width: 45vw; /* Usando 'vw' para ajustar a largura em relação à tela */
       height: auto;
       font-size: 1rem;
+  }
 }
 
 /* Responsivo para dispositivos móveis maiores (até 768px) */
 @media (max-width: 768px) {
   .botao-acao, .botao-grande {
-      width: 30vw; /* A largura foi diminuída um pouco para caber melhor na linha */
+      width: 40vw; /* A largura foi diminuída um pouco para caber melhor na linha */
       height: auto;
       font-size: 1rem;
   }
@@ -394,14 +395,9 @@ footer {
 /* Responsivo para smartphones (até 600px) */
 @media (max-width: 600px) {
   .botao-acao, .botao-grande {
-      width: 50vw; /* Ajusta para 80% da largura da tela em smartphones */
+      width: 80vw; /* Ajusta para 80% da largura da tela em smartphones */
       height: auto;
-    padding: 5px 10px; /* Padding menor */
-    border: 1px solid #aaa; /* Borda fina */
-    
-  }
-
-  
+  } 
   .botao-cta-topo {
     bottom: 10px; /* Distância menor do fundo */
     right: 10px; /* Distância menor da lateral */
