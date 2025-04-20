@@ -369,7 +369,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 10px; /* Espaçamento entre os botões */
-    flex-wrap: wrap; /* Caso não caibam na linha, eles quebram responsivamente */
+    flex-wrap: nowwrap; /* Impede que os botões quebrem para a linha seguinte */
 }
 
 /* Responsivo */
@@ -398,7 +398,7 @@ footer {
       height: auto;
   }
 
-      .botao-pequeno {
+  .botao-pequeno {
     width: 40vw; /* Ajusta para 40% da largura da tela em smartphones */
     height: auto;
     font-size: 0.8rem; /* Ajusta o tamanho da fonte */
