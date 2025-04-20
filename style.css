@@ -380,12 +380,6 @@ footer {
       width: 45vw; /* Usando 'vw' para ajustar a largura em relação à tela */
       height: auto;
       font-size: 1rem;
-  }
-   .botao-pequeno {
-    width: 20vw; /* Largura reduzida para os botões pequenos */
-    height: auto;
-    font-size: 0.8rem; /* Menor tamanho de fonte para botões pequenos */
-  }
 }
 
 /* Responsivo para dispositivos móveis maiores (até 768px) */
@@ -395,13 +389,6 @@ footer {
       height: auto;
       font-size: 1rem;
   }
-
-.botao-pequeno {
-    width: 25vw; /* Largura reduzida para os botões pequenos em telas médias */
-    height: auto;
-    font-size: 0.8rem;
-  }
-  
 }
 
 /* Responsivo para smartphones (até 600px) */
@@ -412,14 +399,6 @@ footer {
     padding: 5px 10px; /* Padding menor */
     border: 1px solid #aaa; /* Borda fina */
     
-  }
-
-  .botao-pequeno {
-    width: 40vw; /* Ajusta para 40% da largura da tela em smartphones */
-    height: auto;
-    font-size: 0.8rem; /* Ajusta o tamanho da fonte */
-     padding: 5px 8px; /* Padding menor para botões pequenos */
-    border: 1px solid #aaa; /* Borda mais fina */
   }
 
   
