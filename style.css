@@ -55,7 +55,7 @@ section {
 
 /* Linha com os botões grandes */
 .botoes-linha {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   gap: 25px;
   align-items: flex-start;
