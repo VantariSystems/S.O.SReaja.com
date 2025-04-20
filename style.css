@@ -394,11 +394,17 @@ footer {
 /* Responsivo para smartphones (até 600px) */
 @media (max-width: 600px) {
   .botao-acao, .botao-grande {
-      width: 60vw; /* Ajusta para 80% da largura da tela em smartphones */
+      width: 80vw; /* Ajusta para 80% da largura da tela em smartphones */
       height: auto;
   }
-}
-@media (max-width: 600px) {
+
+      .botao-pequeno {
+    width: 40vw; /* Ajusta para 40% da largura da tela em smartphones */
+    height: auto;
+    font-size: 0.8rem; /* Ajusta o tamanho da fonte */
+  }
+
+  
   .botao-cta-topo {
     bottom: 10px; /* Distância menor do fundo */
     right: 10px; /* Distância menor da lateral */
