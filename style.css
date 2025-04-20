@@ -394,7 +394,7 @@ footer {
 /* Responsivo para smartphones (até 600px) */
 @media (max-width: 600px) {
   .botao-acao, .botao-grande {
-      width: 80vw; /* Ajusta para 80% da largura da tela em smartphones */
+      width: 70vw; /* Ajusta para 80% da largura da tela em smartphones */
       height: auto;
   }
 }
