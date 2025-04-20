@@ -373,50 +373,35 @@ footer {
 }
 
 /* Responsivo */
+/* Responsivo para tablets (até 1024px) */
 @media (max-width: 1024px) {
   .botao-acao, .botao-grande {
-      width: 45vw;
+      width: 45vw; /* Usando 'vw' para ajustar a largura em relação à tela */
       height: auto;
       font-size: 1rem;
   }
 }
 
+/* Responsivo para dispositivos móveis maiores (até 768px) */
 @media (max-width: 768px) {
   .botao-acao, .botao-grande {
-      width: 40vw; /* Um pouco menor que antes pra tentar caber lado a lado */
+      width: 40vw; /* A largura foi diminuída um pouco para caber melhor na linha */
       height: auto;
       font-size: 1rem;
   }
-
-  .botoes-linha {
-      justify-content: center;
-      gap: 10px;
-      flex-direction: row; /* Mantém os botões na horizontal */
-      flex-wrap: wrap;
-  }
 }
 
+/* Responsivo para smartphones (até 600px) */
 @media (max-width: 600px) {
   .botao-acao, .botao-grande {
-      width: 80vw; /* Aumenta a largura se necessário */
+      width: 80vw; /* Ajusta para 80% da largura da tela em smartphones */
       height: auto;
   }
-
-  .botoes-linha {
-      flex-direction: row; /* Ainda na horizontal */
-      justify-content: center;
-      flex-wrap: wrap; /* Quebra de linha se necessário */
-  }
-
-  .modal-conteudo {
-      width: 90%;
-      max-width: 350px;
-  }
 }
-
 @media (max-width: 600px) {
   .botao-cta-topo {
-    bottom: 10px;
-    right: 10px;
+    bottom: 10px; /* Distância menor do fundo */
+    right: 10px; /* Distância menor da lateral */
   }
 }
+
