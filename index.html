@@ -11,19 +11,16 @@
 </head>
 <body>
 
-  <!-- Cabeçalho -->
   <header>
     <h1>S.O.S Reaja</h1>
     <p class="slogan">Você pode salvar uma vida. Inclusive a sua.</p>
   </header>
 
-  <!-- Seção: Emergências (a expandir depois) -->
   <section class="emergencias">
     <h2>Emergências</h2>
   
     <div class="emergencia-container">
       
-      <!-- Coluna Esquerda: Ligar + Modo Silencioso empilhados -->
       <div class="coluna-esquerda">
         <a href="tel:192" class="botao-acao botao-sos botao-pequeno">📞<br>Ligar 192</a>
         <button class="botao-acao botao-silencioso botao-pequeno" onclick="ativarModoSilencioso()">🌙<br>Modo Silencioso</button>
@@ -31,7 +28,6 @@
 
     </div>
   
-      <!-- Coluna Direita: Botões principais -->
       <div class="botoes-linha">
         <button class="botao-acao botao-grande" onclick="abrirModal('modalCardiaca')">🫀<br>Parada<br>Cardíaca</button>
         <button class="botao-acao botao-grande" onclick="abrirModal('modalEngasgo')">😮‍💨<br>Engasgo</button>
@@ -44,7 +40,6 @@
 
     
   
-    <!-- Modal Parada Cardíaca -->
 <div id="modalCardiaca" class="modal">
     <div class="modal-conteudo">
       <button onclick="fecharModal('modalCardiaca')" class="fechar">Fechar</button>
@@ -67,8 +62,7 @@
     </div>
 
 
-<!-- Modal Engasgo -->
-<!-- Modal Engasgo -->
+
 <div id="modalEngasgo" class="modal">
   <div class="modal-conteudo">
     <button onclick="fecharModal('modalEngasgo')" class="fechar">Fechar</button>
@@ -159,7 +153,6 @@
 
   
 
-    <!-- Overlay do modo silencioso -->
     <div id="modoSilencioso" class="overlay-silencioso">
       <p id="fraseSilenciosa">Respire e chame ajuda. Você está seguro.</p>
       <button onclick="desativarModoSilencioso()">Sair</button>
@@ -169,13 +162,11 @@
     </p>
   </section>
   
-    <!-- Coluna Esquerda: Botões especiais -->
     
         
           
   </section>
 
-  <!-- Seção: Mindset Positivo (com voz e troca automática) -->
   <section class="mindset">
     <h2>🧠 Mentalize e Reaja</h2>
     <div class="mensagem-container">
@@ -186,7 +177,6 @@
     </div>
   </section>
 
-  <!-- Seção: Respiração Guiada -->
   <section class="respiracao">
     <h2>Respiração Guiada</h2>
     <div id="circulo"></div>
@@ -201,12 +191,14 @@
    
   </section>
   
-  <!-- Rodapé -->
+  
   <footer>
-    <p>© 2025 S.O.S Reaja – Criado com expertise para salvar vidas, por Rafaella SA – Web Developer & Systems Analyst in Progress.</p>
+    <p>Inovação e soluções tecnólogicas para o futuro digital.</p>
+    <p>Contato: <a href="vantarisystems@outlook.com">vantarisystems@outlook.com</a></p>
+    <p><strong>Todos os direitos reservados. © 2025 Vantari Systems</strong>. </p>
   </footer>
 
-  <!-- Script -->
+  
   <script src="script.js"></script>
 </body>
 </html>
