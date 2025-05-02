@@ -312,23 +312,17 @@ footer {
     flex-wrap: wrap; 
     margin: 0 auto; 
 }
-.email-link {
-  color #0073e6;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-}
-.email-icon {
-  widht: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-.email-link:hover {
-  color: #005bb5;
-}
+
 footer p {
   margin: 10px 0;
+}
+footer .email-text {
+  font-weight: 500;
+  color: #fff;
+}
+footer strong:
+font-size: 18px;
+color: #ccc;
 }
 @media (max-width: 1024px) {
   .botao-acao, .botao-grande, botao-pequeno {
