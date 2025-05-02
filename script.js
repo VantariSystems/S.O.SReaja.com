@@ -22,13 +22,10 @@ const frases = [
   let intervaloRespiracao = null;
   let vozesDisponiveis = [];
   
-  // Captura as vozes disponíveis
-  window.speechSynthesis.onvoiceschanged = () => {
-    vozesDisponiveis = speechSynthesis.getVoices();
+window.speechSynthesis.onvoiceschanged = () => {
+vozesDisponiveis = speechSynthesis.getVoices();
   };
-  
-  // Fala com voz suave
-  function falarFrase(frase) {
+    function falarFrase(frase) {
     const utterance = new SpeechSynthesisUtterance(frase);
     utterance.lang = "pt-BR";
     utterance.rate = 0.95;
@@ -38,24 +35,19 @@ const frases = [
       v.lang.startsWith("pt") &&
       (v.name.toLowerCase().includes("feminina") || v.name.toLowerCase().includes("br"))
     );
-  
     if (vozSuave) utterance.voice = vozSuave;
   
     speechSynthesis.cancel();
     speechSynthesis.speak(utterance);
   }
-  
-  // Atualiza frase e lê em voz alta
-  function atualizarFrase() {
+    function atualizarFrase() {
     const el = document.getElementById("frase");
     const frase = frases[fraseIndex];
     if (el) el.innerText = frase;
     falarFrase(frase);
     fraseIndex = (fraseIndex + 1) % frases.length;
   }
-  
-  // Ciclo da respiração guiada
-  function cicloRespiratorio() {
+    function cicloRespiratorio() {
     const circulo = document.getElementById("circulo");
     const instrucao = document.getElementById("instrucao");
   
@@ -64,10 +56,9 @@ const frases = [
     circulo.style.transform = "scale(1.5)";
     instrucao.innerText = "Inspire profundamente...";
 
-    // Pausa para respiração
   setTimeout(() => {
-    instrucao.innerText = "Segure a respiração..."; // Instrução para segurar a respiração
-  }, 4000); // Pausa de 4 segundos para inspiração
+    instrucao.innerText = "Segure a respiração...";
+  }, 4000);
   
     setTimeout(() => {
       instrucao.innerText = "Expire lentamente...";
@@ -75,22 +66,13 @@ const frases = [
     }, 7000);
   
     setTimeout(() => {
-      // 4. Pausa e respire normalmente
-      instrucao.innerText = "Pausa. Respire normalmente por alguns segundos."; // Pausa após expiração
-    }, 11000); // Após 12 segundos, dá a pausa
+      instrucao.innerText = "Pausa. Respire normalmente por alguns segundos.";
+    }, 11000);
 
     setTimeout(() => {
       instrucao.innerText = "Você está indo muito bem. Continue.";
     }, 16000);
   }
-
-
-
-
-
-  
-  
-  // Início da respiração e mensagens
   function iniciarRespiracao() {
     document.querySelector('.ativador-audio')?.remove();
   
@@ -102,19 +84,14 @@ const frases = [
   
     intervaloRespiracao = setInterval(cicloRespiratorio, 12000);
     intervaloFrases = setInterval(atualizarFrase, 10000);
-  
-    // Encerra após 5 minutos
-    setTimeout(() => {
+      setTimeout(() => {
       clearInterval(intervaloRespiracao);
       clearInterval(intervaloFrases);
       const instrucao = document.getElementById("instrucao");
       if (instrucao) instrucao.innerText = "Sessão encerrada. Respire no seu ritmo.";
-    }, 300000); // 5 minutos
+    }, 300000);
   }
   
-  // ========================
-  // MODO SILENCIOSO
-  // ========================
   let intervaloSilencioso;
   let ultimaFraseIndex = -1;
 
@@ -136,8 +113,6 @@ const frases = [
     "Anote ou memorize rotas seguras de fuga em sua casa. Isso pode salvar você.",
     "Seu silêncio agora é força. Mas você não precisa passar por isso sozinha.",  
   ];
-
-  
   function ativarModoSilencioso() {
     const div = document.getElementById("modoSilencioso");
     div.style.display = "flex";
@@ -145,69 +120,50 @@ const frases = [
     mostrarFraseSilenciosa();
     intervaloSilencioso = setInterval(mostrarFraseSilenciosa, 5000);
   }
-  
   function desativarModoSilencioso() {
     const div = document.getElementById("modoSilencioso");
     div.style.display = "none";
     document.body.style.overflow = "auto";
     clearInterval(intervaloSilencioso);
   }
-  
   function mostrarFraseSilenciosa() {
     const frase = frasesSilenciosas[Math.floor(Math.random() * frasesSilenciosas.length)];
     document.getElementById("fraseSilenciosa").innerText = frase;
   }
-  
-  // ========================
-  // EXTRAS
-  // ========================
-  function alternarModoEscuro() {
+function alternarModoEscuro() {
     document.body.classList.toggle("dark-mode");
   }
-  
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
   function abrirModal(idcardEngasgo) {
     document.getElementById(id).style.display = 'flex';
   }
-  
   function fecharModal(cardEngasgo) {
     document.getElementById(id).style.display = 'none';
   }
-  
-
-  // Início automático da rotação de frases após carregar vozes
-window.speechSynthesis.onvoiceschanged = () => {
+  window.speechSynthesis.onvoiceschanged = () => {
   if (!intervalFrases) {
-    atualizarFrase(); // primeira frase
-    intervalFrases = setInterval(atualizarFrase, 10000); // a cada 10s
+    atualizarFrase();
+    intervalFrases = setInterval(atualizarFrase, 10000);
   }
 };
-
 function iniciarFrasesComVoz() {
     if (!intervalFrases) {
-      atualizarFrase(); // primeira
-      intervalFrases = setInterval(atualizarFrase, 10000); // depois a cada 10s
+      atualizarFrase();
+      intervalFrases = setInterval(atualizarFrase, 10000);
     }
   }
-  
-  // Quando as vozes carregarem, inicia
   window.speechSynthesis.onvoiceschanged = iniciarFrasesComVoz;
-  
-  // E se as vozes já estiverem carregadas antes do evento acontecer:
-  if (speechSynthesis.getVoices().length > 0) {
+    if (speechSynthesis.getVoices().length > 0) {
     iniciarFrasesComVoz();
   }
-  
   function abrirModal(id) {
     const modal = document.getElementById(id);
     if (modal) {
       modal.style.display = "flex";
     }
   }
-  
   function fecharModal(id) {
     const modal = document.getElementById(id);
     if (modal) {
