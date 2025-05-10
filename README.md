@@ -1,11 +1,14 @@
-## Direitos Autorais
+Licença de Uso Pessoal - S.O.S Reaja | Rafaella de Sousa Andrelino
 
-© 2025 Rafaella de Sousa Andrelino. Todos os direitos reservados.
+Este projeto foi criado com o objetivo de acolher, informar e empoderar pessoas em situações desafiadoras. É de uso exclusivo da autora.
 
-Este projeto foi idealizado, desenvolvido e publicado por mim, com o objetivo de apoiar pessoas em situações desafiadoras por meio da tecnologia.
+Uso permitido:
+- Consulta para fins educacionais e inspiração pessoal, sem reprodução do código, layout ou funcionalidades.
 
-**Não é permitida a cópia, redistribuição, modificação ou uso parcial/total deste código sem minha autorização expressa por escrito.**
+Uso proibido:
+- Clonar, hospedar ou redistribuir qualquer parte do projeto;
+- Utilizar código, textos, funcionalidades ou estrutura visual para fins comerciais, acadêmicos ou públicos sem autorização.
 
-Caso você tenha interesse em colaborar ou utilizar trechos para fins educacionais, entre em contato pelo e-mail disponível no portfólio.
+Para uso autorizado, entre em contato com a autora.
 
-Violação de uso pode acarretar medidas legais conforme a Lei de Direitos Autorais (Lei 9.610/98 - Brasil) e os Termos do GitHub
+© 2025 Rafaella de Sousa Andrelino
